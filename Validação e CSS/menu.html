@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta Charset="UTF-8" />
+        <title>CSS</title>
+        <link type="text/css" rel="stylesheet" href="CSS/menu.css" />
+    </head>
+    <body>
+        <header>
+            <h1 class="centro"> Conceitos CSS</h1>
+            <h3 class="centro"> Perguntas: </h3>
+        </header>
+        <div class = "container ">
+        <div id="sidebar-menu">
+            <ul class="menu">
+                <li class="menu-item corner-all">
+                    <span>  A- É  possível  sobrepor  à  aparência(estilo)definida  em  regras  CSS  anteriores, mais  genéricas,  por  regras  mais  específicas?  Se  possível,  essa  técnica  tem nome?Exemplifique.</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <p class="centro">Sim, o nome da técnica é <span>Overriding</span>.</p>
+                        </li>
+                        <li class="submenu-item">
+                            <fieldset>
+                                <legend> <span>Exemplificação</span></legend>
+                                <p> No código HTML eu tenho um marcador(H1), e quero que um dos atributos dele como por exemplo a cor, seja diferenciada de todo o body, então em um código CSS usando a técnica Overriding <span>atribuindo a ele um fator mais específico</span>, isso será possivel. </p>
+                            </fieldset>
+                        </li>  
+                    </ul>
+                </li>
+                <li class="menu-item corner-all">
+                    <span>B- Caso definíssemos uma regra CSS mais geral para cabeçalhos de nível 1, 2 e 3,  seguida  de  outra  somente  para  o  nível  1,  como  seria  o  comportamento  do navegador?  Descreva  os  vários  cenários  possíveis  e  o  comportamento do navegador em cada uma delas.</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <p>Assim como relata a exemplificação da letra A, <span>um style mais específico</span> será aplicado pelo navegador ao invés de um style mais geral.</p>
+                        </li>
+                        <li class="submenu-item">
+                            <fieldset>
+                                <legend> <span> Alguns Dos Possíveis Cenários </span></legend>
+                                <p> |1º| Caso especifique um tipo de fonte padrão(Arial) e outra para o [H1](Verdana), a fonte Verdana permanecerá no mesmo.</p>
+                                <p> |2º| Caso especifique uma cor padrão(Azul) e outra para o [H1](Preta), a cor Preta permanecerá no mesmo.</p>
+                            </fieldset>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item corner-all">
+                    <span>C- É sempre interessante otimizar o código CSS? Cite algumas vantagens.</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <p class="centro">É <span>importante haver otimização</span> do código.</p>                 
+                        </li>
+                        <li class="submenu-item">
+                            <fieldset>
+                                <legend>  <span> Vantagens </span>  </legend>
+                                <p> |1|Clareza no código.</p>  
+                                <p> |2|Evitar duplicação no código.</p>
+                                <p> |3|Reduzir o tempo de produção do código.</p>
+                                <p> |4|Reduzir tempo de redenrização do navegador.</p>
+                            </fieldset>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li class="menu-item corner-all">
+                    <span>D- Defina herança em CSS. Utilize, também,imagens para ilustrar tais definições.</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <p> Ultilizando a herança, sendo definido um style, ou seja, uma característica em um <span>marcador geral, todas as tags interiores herdam tal style</span>. Porém não impede de ser alterado pelo método Overriding.   </p>
+                        </li>
+                        <li class="submenu-item">
+                            <fieldset>
+                                <legend> <span> Exemplo </span></legend>
+                                <div>
+                                    <img class="img-card" src="Img/heranca.PNG"/>
+                                    <p class="centro"> <span> Após um style ser atribuído ao Body, todos aqueles que estam abaixo herdam o mesmo style, desde suas tags necessitem.</span></p>
+                                    <fieldset class="codigo">
+                                        <legend> <span>Código Demostrativo</span></legend>
+                                        <p> body {<br>
+                                            font-family: sans-serif;}</p>
+                                        <br>
+                                        <p>h1, h2{ <br>
+                                               color: gray;<br>
+                                            <r>font-family:sans-serif;</r>} <br> <u>//Não há mais necessidade pois foi herdado!</u> </p>
+                                    </fieldset>
+                                </div>
+                                
+                            
+                            </fieldset>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item corner-all">
+                    <span>E- Podemos sobrescrever características herdadas todas as vezes que desejarmos deixá-la mais específica?</span>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <p><span>Os argumentos mais específicos definem sempre a parte final de algo</span>, ou seja, o estilo final de tal tag. Logo podemos confirmar que sim podemos sobrescrever características herdadas.</p>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+        </div>
+        
+        <footer class="footer" >
+            <h2 class="centro"> Feito por @Maya_Brito com ❤ 2018</h2>
+        </footer>
+    </body>
+</html>
